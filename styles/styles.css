@@ -45,7 +45,9 @@ body {
   background-color: #ffd000; }
   @media only screen and (max-width: 1060px) {
     .header__box {
-      flex-direction: column; } }
+      flex-direction: column;
+      align-items: center;
+      padding: 1.5rem 0; } }
 
 .header__icons i {
   font-size: 1.2rem;

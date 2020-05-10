@@ -6,6 +6,8 @@ padding: 1rem 6rem;
 background-color: rgb(255, 208, 0);
 @include ipad {
     flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
 }
 }
 
