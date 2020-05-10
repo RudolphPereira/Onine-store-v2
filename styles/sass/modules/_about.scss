@@ -1,0 +1,28 @@
+.about {
+background-color: white;
+width: 80%;
+padding: 4rem 0;
+margin: -4rem auto 0 auto;
+@include ipad {
+    margin: -2rem auto 0 auto;
+}
+@include iphone {
+    width: 75%;
+    padding: 2rem;
+}
+
+&__content {
+display: flex;
+justify-content: space-around;
+align-items: center;
+@include iphone {
+    flex-direction: column;
+}
+}
+
+&__img {
+@include iphone {
+    margin-bottom: 2rem;
+}
+}
+}

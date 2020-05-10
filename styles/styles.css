@@ -1,0 +1,522 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.nav {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.5rem; }
+  @media only screen and (max-width: 1060px) {
+    .nav {
+      flex-direction: column;
+      align-items: center; } }
+  .nav__logo {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem; }
+  .nav__logoimage {
+    margin-right: .5rem; }
+  .nav__logotext {
+    font-family: 'Merriweather', serif; }
+  .nav__list {
+    display: flex;
+    list-style: none; }
+    @media only screen and (max-width: 1060px) {
+      .nav__list {
+        margin-top: 0; } }
+  .nav__items {
+    margin-right: 1rem; }
+  .nav__link {
+    text-decoration: none;
+    color: #222;
+    transition: all .5s; }
+  .nav__link:hover {
+    background-color: #f65058ff;
+    padding: .3rem .4rem;
+    color: white; }
+
+.header__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6rem;
+  background-color: #ffd000; }
+  @media only screen and (max-width: 1060px) {
+    .header__box {
+      flex-direction: column; } }
+
+.header__icons i {
+  font-size: 1.2rem;
+  margin-right: .5rem; }
+
+.header__form input {
+  text-align: center;
+  padding: .5rem 7rem;
+  border: none;
+  border-radius: 5px;
+  margin-left: 7rem; }
+  @media only screen and (max-width: 1060px) {
+    .header__form input {
+      margin: 1rem 0; } }
+
+.header__buttons a {
+  text-decoration: none;
+  color: #222;
+  margin-right: .5rem;
+  padding: .5rem;
+  background-color: aliceblue;
+  border-radius: 5px; }
+
+.header {
+  background-image: url("./../../../images/headerbackground/mom-and-daughter-eating-cake-on-brown-wooden-table-3992140.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed; }
+  .header__hero {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35%;
+    margin: 0 auto;
+    width: 30%;
+    background-color: rgba(240, 248, 255, 0.815);
+    text-align: center;
+    padding: .5rem;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%); }
+    @media only screen and (max-width: 1060px) {
+      .header__hero {
+        margin: 10% auto;
+        width: 40%; } }
+    @media only screen and (max-width: 600px) {
+      .header__hero {
+        margin: 20% auto;
+        width: 60%; } }
+  .header__title {
+    font-size: 2.3rem;
+    font-family: 'Merriweather', serif; }
+  .header__des {
+    font-size: 1.1rem;
+    font-family: 'Bitter', serif;
+    margin-bottom: 1rem; }
+  .header__link {
+    background-color: #ffd000;
+    box-shadow: 2px 2px 4px grey;
+    padding: .6rem;
+    text-decoration: none;
+    color: #222;
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    transition: all .5s; }
+    @media only screen and (max-width: 1060px) {
+      .header__link {
+        font-size: 1rem;
+        padding: .5rem; } }
+  .header__link:hover {
+    background-color: #f65058ff;
+    color: white;
+    box-shadow: 4px 4px 8px grey; }
+
+.about {
+  background-color: white;
+  width: 80%;
+  padding: 4rem 0;
+  margin: -4rem auto 0 auto; }
+  @media only screen and (max-width: 1060px) {
+    .about {
+      margin: -2rem auto 0 auto; } }
+  @media only screen and (max-width: 600px) {
+    .about {
+      width: 75%;
+      padding: 2rem; } }
+  .about__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    @media only screen and (max-width: 600px) {
+      .about__content {
+        flex-direction: column; } }
+  @media only screen and (max-width: 600px) {
+    .about__img {
+      margin-bottom: 2rem; } }
+
+.categories {
+  padding: 2rem;
+  display: flex; }
+  @media only screen and (max-width: 1060px) {
+    .categories {
+      flex-direction: column;
+      align-items: center; } }
+
+.categories__left {
+  width: 75%; }
+  @media only screen and (max-width: 1060px) {
+    .categories__left {
+      width: 100%; } }
+
+.categories__left--toprow {
+  display: flex;
+  justify-content: space-around; }
+  @media only screen and (max-width: 600px) {
+    .categories__left--toprow {
+      flex-direction: column;
+      align-items: center; } }
+
+.category--col {
+  width: 30%; }
+  @media only screen and (max-width: 600px) {
+    .category--col {
+      width: 70%; } }
+
+.catgeories__left--bottomrow {
+  display: flex; }
+  @media only screen and (max-width: 1060px) {
+    .catgeories__left--bottomrow {
+      flex-direction: column;
+      align-items: center; } }
+
+.categories__left--bottomrowimagecontainer {
+  width: 30%;
+  padding: 1rem 2rem; }
+  @media only screen and (max-width: 1060px) {
+    .categories__left--bottomrowimagecontainer {
+      width: 40%; } }
+  @media only screen and (max-width: 600px) {
+    .categories__left--bottomrowimagecontainer {
+      width: 100%; } }
+
+.category__image--bottomrow {
+  width: 100%;
+  height: 100%;
+  box-shadow: 2px 2px 4px grey; }
+
+.category__text--content {
+  width: 70%;
+  padding: 1rem; }
+  @media only screen and (max-width: 1060px) {
+    .category__text--content {
+      text-align: center; } }
+  @media only screen and (max-width: 600px) {
+    .category__text--content {
+      width: 100%; } }
+
+.category__Title {
+  font-family: 'Merriweather', serif; }
+
+.category__desc {
+  line-height: 1.5; }
+
+.categories__right {
+  width: 25%; }
+  @media only screen and (max-width: 1060px) {
+    .categories__right {
+      width: 70%;
+      display: flex; } }
+  @media only screen and (max-width: 600px) {
+    .categories__right {
+      flex-direction: column;
+      width: 80%; } }
+
+@media only screen and (max-width: 1060px) {
+  .category--responsive {
+    margin: .5rem; } }
+
+.category {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 2px 4px grey;
+  margin-bottom: 1rem; }
+
+.category__image--container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9;
+  background-color: black; }
+
+.category__image {
+  width: 100%;
+  height: 100%;
+  opacity: .8; }
+
+.category__text {
+  z-index: 999;
+  position: relative;
+  text-align: center;
+  padding: .5rem; }
+
+.category__title {
+  color: #f65058ff;
+  background-color: rgba(255, 255, 255, 0.856);
+  margin: 1rem 1.5rem;
+  padding: .5rem .2rem;
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%); }
+
+.category__des {
+  color: white;
+  line-height: 1.5; }
+
+.category__rating {
+  font-size: 1.5rem;
+  color: goldenrod;
+  margin-bottom: 1rem; }
+
+.category__link {
+  text-decoration: none;
+  background-color: #ffd000;
+  color: #222;
+  padding: .3rem .4rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  border-radius: 5px;
+  transition: all .5s; }
+
+.category__link:hover {
+  background-color: #f65058ff;
+  color: white; }
+
+.history {
+  padding: 2rem 2rem 2rem 0; }
+  @media only screen and (max-width: 1060px) {
+    .history {
+      padding: 0; } }
+  .history__content {
+    display: flex; }
+    @media only screen and (max-width: 1060px) {
+      .history__content {
+        flex-direction: column; } }
+  .history__backgroundimage {
+    width: 70%;
+    background-image: url("./../../../images/history/girl-in-yellow-shirt-holding-brown-cake-3992372.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left;
+    margin-right: 1rem;
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%); }
+    @media only screen and (max-width: 1060px) {
+      .history__backgroundimage {
+        height: 60vh;
+        clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+        width: 100%; } }
+    @media only screen and (max-width: 600px) {
+      .history__backgroundimage {
+        background-position: center; } }
+  .history__text {
+    width: 30%; }
+    @media only screen and (max-width: 1060px) {
+      .history__text {
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem; } }
+  .history__title {
+    margin: 0;
+    font-family: 'Merriweather', serif; }
+  .history__des {
+    line-height: 1.5;
+    color: grey; }
+    @media only screen and (max-width: 1060px) {
+      .history__des {
+        padding: 0 2rem; } }
+  .history__link {
+    text-decoration: none;
+    color: white;
+    background-color: #f65058ff;
+    padding: .4rem .5rem;
+    box-shadow: 2px 2px 4px grey;
+    transition: all .5s; }
+  .history__link:hover {
+    background-color: #ffd000;
+    color: #222;
+    box-shadow: 4px 4px 8px grey; }
+
+.reviews {
+  padding: 4rem 2rem; }
+  .reviews__content {
+    display: flex;
+    flex-wrap: wrap; }
+    @media only screen and (max-width: 1060px) {
+      .reviews__content {
+        justify-content: space-around; } }
+
+.review {
+  width: 45%;
+  border: 1px solid #ffd000;
+  padding: 1rem;
+  margin: .5rem; }
+  @media only screen and (max-width: 1060px) {
+    .review {
+      width: 44%; } }
+  @media only screen and (max-width: 600px) {
+    .review {
+      width: 100%; } }
+  .review__img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    box-shadow: 2px 2px 4px grey; }
+  .review__user {
+    display: flex;
+    align-items: center; }
+  .review__title {
+    margin-bottom: 0;
+    color: grey; }
+  .review__location {
+    margin-top: 0; }
+  .review__icon {
+    color: #f65058ff; }
+
+.products {
+  padding: 7rem 2rem; }
+  @media only screen and (max-width: 600px) {
+    .products {
+      padding: 4rem 2rem; } }
+  .products__content {
+    display: flex;
+    justify-content: space-around; }
+    @media only screen and (max-width: 600px) {
+      .products__content {
+        flex-direction: column;
+        align-items: center; } }
+
+.product {
+  width: 23%;
+  box-shadow: 2px 2px 4px grey;
+  transition: all .5s; }
+  @media only screen and (max-width: 600px) {
+    .product {
+      width: 65%;
+      margin-bottom: 1.5rem; } }
+  .product:hover {
+    box-shadow: 8px 8px 16px grey; }
+  .product__image--container {
+    background-color: black;
+    transition: all .5s; }
+  .product__image {
+    width: 100%;
+    display: block;
+    opacity: .8; }
+  .product:hover .product__image {
+    opacity: 1; }
+  .product__text {
+    padding: 1rem; }
+  .product__title {
+    margin: 0;
+    font-family: 'Merriweather', serif; }
+  .product__des {
+    margin-top: 0;
+    font-size: .9rem; }
+  .product__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .product__icon {
+    color: goldenrod;
+    font-size: 1.3rem; }
+  .product__price {
+    font-weight: bold;
+    font-size: 1.1rem; }
+
+.email {
+  padding: 8rem 2rem;
+  background-color: aliceblue; }
+  .email__container {
+    background-color: #f65058ff;
+    width: 60%;
+    padding: 5rem;
+    margin: 0 auto; }
+    @media only screen and (max-width: 1060px) {
+      .email__container {
+        padding: 3rem; } }
+    @media only screen and (max-width: 600px) {
+      .email__container {
+        padding: 4rem; } }
+  .email__content {
+    background-color: white;
+    width: 60%;
+    padding: 6rem 4rem;
+    margin: 0 auto;
+    text-align: center; }
+    @media only screen and (max-width: 1060px) {
+      .email__content {
+        padding: 4rem; } }
+    @media only screen and (max-width: 600px) {
+      .email__content {
+        padding: 3rem; } }
+  .email__title {
+    font-family: 'Merriweather', serif;
+    font-size: 1.4rem; }
+    @media only screen and (max-width: 600px) {
+      .email__title {
+        font-size: 1.2rem; } }
+  .email__form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto; }
+    @media only screen and (max-width: 600px) {
+      .email__form {
+        width: 100%; } }
+  .email__input {
+    margin-bottom: 1.2rem;
+    padding: .8rem 1rem;
+    border: 1px solid #f65058ff;
+    border-radius: 5px; }
+  .email__button {
+    background-color: #ffd000;
+    box-shadow: 2px 2px 4px grey;
+    border-radius: 10px;
+    width: 6rem;
+    margin: 0 auto;
+    padding: .7rem 1rem;
+    border: none;
+    transition: all .5s; }
+  .email__button:hover {
+    background-color: #f65058ff;
+    color: white; }
+
+.footer {
+  padding: 4rem;
+  background-color: #ffd000;
+  display: flex;
+  justify-content: space-around; }
+  @media only screen and (max-width: 600px) {
+    .footer__nav {
+      margin-right: 2rem; } }
+  .footer__title {
+    font-size: 1.1rem;
+    margin-left: 2rem;
+    color: #f65058ff;
+    font-family: 'Merriweather', serif; }
+  .footer__list {
+    list-style: none; }
+  .footer__list2 {
+    display: flex;
+    list-style: none; }
+    @media only screen and (max-width: 600px) {
+      .footer__list2 {
+        flex-direction: column; } }
+  .footer__items {
+    margin: .5rem 0;
+    font-size: 1.1rem; }
+    @media only screen and (max-width: 600px) {
+      .footer__items {
+        font-size: 1rem; } }
+  .footer__items2 {
+    margin-right: 1.5rem; }
+    @media only screen and (max-width: 600px) {
+      .footer__items2 {
+        margin-bottom: 1rem;
+        font-size: 1rem; } }
+  .footer__link {
+    text-decoration: none;
+    color: #222;
+    transition: all .5s; }
+  .footer__link:hover {
+    color: white; }
+  .footer__icon {
+    font-size: 1.5rem; }

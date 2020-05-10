@@ -1,0 +1,70 @@
+.history {
+padding: 2rem 2rem 2rem 0;
+@include ipad {
+    padding: 0;
+}
+
+&__content {
+display: flex;
+@include ipad {
+    flex-direction: column;
+}
+}
+
+&__backgroundimage {
+width: 70%;
+background-image: url('./../../../images/history/girl-in-yellow-shirt-holding-brown-cake-3992372.jpg');
+background-size: cover;
+background-attachment: fixed;
+background-position: left;
+margin-right: 1rem;
+clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+@include ipad {
+    height: 60vh;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);    
+    width: 100%;
+}
+@include iphone {
+    background-position: center;
+}
+}
+
+&__text {
+width: 30%;
+@include ipad {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+
+}
+}
+
+&__title {
+margin: 0;
+font-family: 'Merriweather', serif;
+}
+
+&__des {
+line-height: 1.5;
+color: grey;
+@include ipad {
+    padding: 0 2rem;
+
+}
+}
+
+&__link {
+text-decoration: none;
+color: white;
+background-color:  #f65058ff;
+padding: .4rem .5rem;
+box-shadow: 2px 2px 4px grey;
+transition: all .5s;
+}
+
+&__link:hover {
+background-color: rgb(255, 208, 0);
+color: #222;
+box-shadow: 4px 4px 8px grey;
+}
+}

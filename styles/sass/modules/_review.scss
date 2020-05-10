@@ -1,0 +1,53 @@
+.reviews {
+padding: 4rem 2rem;
+
+
+&__content {
+display: flex;
+flex-wrap: wrap;
+
+@include ipad {
+justify-content: space-around;
+}
+}
+}
+
+.review {
+width: 45%;
+border: 1px solid  rgb(255, 208, 0);
+padding: 1rem;
+margin: .5rem;
+@include ipad {
+    width: 44%;    
+}
+@include iphone {
+    width: 100%;
+}
+
+
+&__img {
+width: 5rem;
+height: 5rem;
+border-radius: 50%;
+margin-right: 1rem;
+box-shadow: 2px 2px 4px grey;
+}
+
+&__user {
+display: flex;
+align-items: center;
+}
+
+&__title {
+margin-bottom: 0; 
+color: grey; 
+}
+
+&__location {
+margin-top: 0;
+}
+
+&__icon {
+color: #f65058ff;
+}
+}

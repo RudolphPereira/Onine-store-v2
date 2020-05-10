@@ -1,0 +1,20 @@
+{
+  "name": "online-store-practice4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compiler": "node-sass styles/sass/styles.scss styles/styles.css -w",
+    "prefix": "postcss styles/styles.css -u postcss-prefixer -o styles/output.css"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "postcss-cli": "^7.1.1",
+    "postcss-prefixer": "^2.1.2"
+  }
+}

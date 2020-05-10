@@ -1,0 +1,67 @@
+.footer {
+padding: 4rem;
+background-color:  rgb(255, 208, 0);
+display: flex;
+justify-content: space-around;
+
+&__nav {
+@include iphone {
+margin-right: 2rem;
+}
+}
+
+
+&__title {
+font-size: 1.1rem;
+margin-left: 2rem;
+color:  #f65058ff;
+font-family: 'Merriweather', serif;
+}
+
+
+&__list {
+list-style: none;
+}
+
+&__list2 {
+display: flex;
+list-style: none;
+@include iphone {
+    flex-direction: column;
+    
+}
+}
+
+&__items {
+margin: .5rem 0;
+font-size: 1.1rem;
+@include iphone {
+    font-size: 1rem;
+}
+}
+
+&__items2 {
+margin-right: 1.5rem;
+@include iphone {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+}
+
+&__link {
+text-decoration: none;
+color: #222;
+transition: all .5s;
+}
+
+&__link:hover {
+color: white;
+}
+
+&__icon {
+font-size: 1.5rem;    
+}
+}
+
+
+
