@@ -1,2 +1,2 @@
 # Onine-store-v2
-Updated iphone and Ipad Responsive Design
+Built an Online Store {Learning to Code}
